@@ -41,3 +41,21 @@ sitemap: false
       }
     }
 }
+
+
+.page-navigation {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.page-navigation a {
+  display: block;
+  float: left;
+  margin: 1em 0;
+}
+
+.page-navigation .next {
+  text-align: right;
+  float: right;
+}
