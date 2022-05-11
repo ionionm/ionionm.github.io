@@ -1,22 +1,46 @@
 <footer class="site-footer h-card">
-    <data class="u-url" href="{{ "/" | relative_url }}"></data>
-    <div class="wrapper">
-      <div class="footer-col-wrapper">
-        <div class="footer-col">
-          <ul class="contact-list">
-            <li class="p-name">
-              {%- if site.author -%}
-                <a class="black-link" href="{{ site.url }}/about.html">
-                  {{ site.author | escape }} 
-                </a>
-              {%- endif -%}
-              </li>
-              {%- if site.email -%}
-              <li>
-              <a class="u-email black-link" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-              {%- endif -%}
-          </ul>
-        </div>
+  <data class="u-url" href="{{ " /" | relative_url }}"></data>
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <ul class="contact-list">
+          <li class="p-name">
+            {%- if site.author -%}
+            <a class="black-link" href="{{ site.url }}/about.html">
+              {{ site.author | escape }}
+            </a>
+            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+          <li>
+            <a class="u-email black-link" href="mailto:{{ site.email }}">{{ site.email }}</a>
+          </li>
+          {%- endif -%}
+        </ul>
       </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
+
+<!-- gitalk -->
+{%- if jekyll.environment == 'production' -%}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.css">
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.7.2/dist/gitalk.min.js"></script>
+<script src="{{ site.baseurl }}/assets/js/md5.min.js"></script>
+<script>
+  var gitalk = new Gitalk({
+    clientID: 'fcb0dd6c098bec44145b',
+    clientSecret: 'aa609659498d711ed2508bd6a1d51ca95e1ccf63',
+    repo: 'ionionm.github.io',
+    owner: 'ionionm',
+    admin: ['ionionm'],
+    id: md5(location.pathname),  // Ensure uniqueness and length less than 50
+    distractionFreeMode: false,  // Facebook-like distraction free mode
+    createIssueManually: true,
+    pagerDirection: "first",
+    perPage: 25,
+  })
+  gitalk.render('gitalk-container')
+</script>
+{%- endif -%}
