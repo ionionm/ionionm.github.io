@@ -3,7 +3,7 @@ author: IonionM # Your name
 email: isonion@163.com # your email shown in the footer
 url: https://ionionm.github.io/ # this is your site's root address.
 description: > # this means to ignore newlines until "show_excerpts:"
-  Good good study, day day up!.
+  Good Good Study! Day Day Up!.
 favicon: "./favicon.ico" # set the favicon of the site 
 
 show_excerpts: false # set to true to show excerpts on the homepage
@@ -48,3 +48,4 @@ moving:
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
