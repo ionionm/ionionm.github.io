@@ -42,7 +42,7 @@
 .hljs-template-variable,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #ade5fc;
+  color: #fcadef;
 }
 
 .hljs-string,
@@ -57,7 +57,7 @@
 .hljs-quote,
 .hljs-built_in,
 .hljs-builtin-name {
-  color: #ffa;
+  color: rgb(54, 111, 218);
 }
 
 .hljs-number,
