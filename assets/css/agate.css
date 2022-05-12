@@ -20,7 +20,7 @@
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #f6f6fc;
+  background: #fdfdfd;
   color: rgb(18, 17, 17);
 }
 
@@ -47,7 +47,7 @@
 
 .hljs-string,
 .hljs-bullet {
-  color: #a2fca2;
+  color: #3ff93f;
 }
 
 .hljs-type,
@@ -93,7 +93,7 @@
 }
 
 .hljs-addition {
-  background-color: #a2fca2;
+  background-color: #52f452;
   color: #333;
 }
 
