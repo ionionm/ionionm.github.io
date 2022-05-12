@@ -20,7 +20,7 @@
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #f5f5ff;
+  background: #f6f6fc;
   color: rgb(18, 17, 17);
 }
 
@@ -42,7 +42,7 @@
 .hljs-template-variable,
 .hljs-selector-id,
 .hljs-selector-class {
-  color: #fcadef;
+  color: #f77ae2;
 }
 
 .hljs-string,
