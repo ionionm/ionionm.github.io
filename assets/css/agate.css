@@ -20,8 +20,8 @@
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: #f7f6f3;
-  color: white;
+  background: #f5f5ff;
+  color: rgb(18, 17, 17);
 }
 
 .hljs-name,
