@@ -75,7 +75,7 @@
 .hljs-comment,
 .hljs-deletion,
 .hljs-code {
-  color: #888;
+  color: rgb(0, 0, 0);
 }
 
 .hljs-regexp,
